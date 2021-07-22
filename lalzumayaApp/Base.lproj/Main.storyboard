@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
-        <!--Users View Controller-->
+        <!--Users-->
         <scene sceneID="CQp-TS-jAq">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="jao-8v-R2c" customClass="usersViewController" customModule="lalzumayaApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,7 +224,7 @@
                             <constraint firstItem="pph-ba-Ofc" firstAttribute="trailing" secondItem="yPi-ck-azR" secondAttribute="trailing" id="nuX-Yt-afp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eLq-mT-gXK"/>
+                    <navigationItem key="navigationItem" title="Users" id="eLq-mT-gXK"/>
                     <connections>
                         <outlet property="usersTableView" destination="yPi-ck-azR" id="mW0-pg-hD5"/>
                     </connections>
