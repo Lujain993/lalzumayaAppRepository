@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Qu-Ej-57K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Box View Controller-->
+        <scene sceneID="ORG-bd-bAg">
+            <objects>
+                <viewController storyboardIdentifier="alertVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8Qu-Ej-57K" customClass="alertBoxViewController" customModule="lalzumayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0Q-xl-RdA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXX-o8-tmn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKK-my-HfK">
+                                        <rect key="frame" x="69.5" y="307" width="275" height="282"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F13-Vo-1xM">
+                                                <rect key="frame" x="20" y="20" width="235" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="JXy-eF-h3C"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbN-4H-igV">
+                                                <rect key="frame" x="20" y="90" width="235" height="112"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHN-X9-ASs">
+                                                <rect key="frame" x="185" y="229" width="70" height="33"/>
+                                                <color key="backgroundColor" name="darkOrang"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                                <state key="normal" title="  Dismiss  ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dismissTapped:" destination="8Qu-Ej-57K" eventType="touchUpInside" id="7Ol-hQ-yXL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PbN-4H-igV" secondAttribute="trailing" constant="20" id="2Z0-5c-o4I"/>
+                                            <constraint firstAttribute="width" constant="275" id="7cm-ZX-r1t"/>
+                                            <constraint firstItem="PbN-4H-igV" firstAttribute="top" secondItem="FKK-my-HfK" secondAttribute="top" constant="90" id="f2h-bn-mpd"/>
+                                            <constraint firstItem="F13-Vo-1xM" firstAttribute="top" secondItem="FKK-my-HfK" secondAttribute="top" constant="20" id="gow-y9-e9e"/>
+                                            <constraint firstAttribute="trailing" secondItem="F13-Vo-1xM" secondAttribute="trailing" constant="20" id="h3X-b6-E8S"/>
+                                            <constraint firstItem="PbN-4H-igV" firstAttribute="leading" secondItem="FKK-my-HfK" secondAttribute="leading" constant="20" id="jQ3-c5-vm9"/>
+                                            <constraint firstAttribute="bottom" secondItem="PbN-4H-igV" secondAttribute="bottom" constant="80" id="jVO-v5-bfA"/>
+                                            <constraint firstAttribute="bottom" secondItem="QHN-X9-ASs" secondAttribute="bottom" constant="20" id="obF-rr-cE3"/>
+                                            <constraint firstAttribute="trailing" secondItem="QHN-X9-ASs" secondAttribute="trailing" constant="20" id="pyS-Hj-qXe"/>
+                                            <constraint firstItem="F13-Vo-1xM" firstAttribute="leading" secondItem="FKK-my-HfK" secondAttribute="leading" constant="20" id="wtE-0O-etb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.35043062121662871" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FKK-my-HfK" firstAttribute="centerX" secondItem="GXX-o8-tmn" secondAttribute="centerX" id="Bf7-UM-uBu"/>
+                                    <constraint firstItem="FKK-my-HfK" firstAttribute="centerY" secondItem="GXX-o8-tmn" secondAttribute="centerY" id="UGD-fu-jv4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x0m-Gl-9oz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GXX-o8-tmn" secondAttribute="trailing" id="Qz6-GO-Gm4"/>
+                            <constraint firstAttribute="bottom" secondItem="GXX-o8-tmn" secondAttribute="bottom" id="m7m-D1-zxy"/>
+                            <constraint firstItem="GXX-o8-tmn" firstAttribute="top" secondItem="J0Q-xl-RdA" secondAttribute="top" id="s1f-iq-5C7"/>
+                            <constraint firstItem="GXX-o8-tmn" firstAttribute="leading" secondItem="x0m-Gl-9oz" secondAttribute="leading" id="w31-Y1-Ryg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertMessage" destination="PbN-4H-igV" id="XhA-ei-CBs"/>
+                        <outlet property="alertTitle" destination="F13-Vo-1xM" id="wJG-a6-gGD"/>
+                        <outlet property="dissmissButton" destination="QHN-X9-ASs" id="QEu-9r-sBK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvt-V7-yIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188.40579710144928" y="-269.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="darkOrang">
+            <color red="0.90200001001358032" green="0.33700001239776611" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

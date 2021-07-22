@@ -1,0 +1,22 @@
+PODS:
+  - sqlite3 (3.36.0):
+    - sqlite3/common (= 3.36.0)
+  - sqlite3/common (3.36.0)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - sqlite3
+  - Starscream (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - sqlite3
+    - Starscream
+
+SPEC CHECKSUMS:
+  sqlite3: 797b1b1f92baf74716a3179f69d9652ce4a5df3f
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 58e90d5bf290fabde7c52d515eae65ccc6cb0944
+
+COCOAPODS: 1.10.1
